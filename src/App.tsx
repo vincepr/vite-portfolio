@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { Children, useEffect, useState } from "react"
 import useMediaQuery from "./hooks/useMediaQuery"
 import Landing from "./scenes/Landing"
 import Navbar from "./scenes/Navbar"
@@ -9,6 +9,7 @@ import Contact from "./scenes/Contact"
 import References from "./scenes/References"
 import MySkills from "./scenes/MySkills"
 import Footer from "./scenes/Footer"
+import { motion } from "framer-motion"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home")
@@ -18,7 +19,10 @@ function App() {
   /*handles scrolling to know if were at the top to show navbar*/
   useEffect(() => {
     function handleScroll(){
-      if (window.scrollY === 0) setisTopOfPage(true)
+      if (window.scrollY === 0) {
+        setSelectedPage("home")
+        setisTopOfPage(true)
+      }
       if (window.scrollY !== 0) setisTopOfPage(false)
     }
     window.addEventListener("scroll", handleScroll)
@@ -39,27 +43,49 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <Landing setSelectedPage={setSelectedPage}/>
-       </div>
-       <LineGradient />
-       <div className="w-5/6 mx-auto md:h-full">
-          <MySkills/>
-       </div>
-       <LineGradient/>
-       <div className="w-5/6 mx-auto">
-        <Projects />
-       </div>
-       <LineGradient/>
-       <div className="w-5/6 mx-auto md:h-full">
-        <References />
-       </div>
-       <LineGradient/>
-       <div className="w-5/6 mx-auto md:h-full">
-        <Contact />
-       </div>
-       <Footer/>
-    </div>
+		<UpdateScroll page={"home"} setSelectedPage={setSelectedPage}>
+			<Landing setSelectedPage={setSelectedPage}/>
+		</UpdateScroll>
+		</div>
+		<LineGradient />
+		
+		<div className="w-5/6 mx-auto md:h-full">
+			<UpdateScroll page={"skills"} setSelectedPage={setSelectedPage}>
+				<MySkills/>
+			</UpdateScroll>
+		</div>
+		<LineGradient/>
+		
+		<div className="w-5/6 mx-auto">
+			<UpdateScroll page={"projects"} setSelectedPage={setSelectedPage}>
+				<Projects />
+			</UpdateScroll>
+		</div>
+		<LineGradient/>
+		<div className="w-5/6 mx-auto md:h-full">
+			<UpdateScroll page={"references"} setSelectedPage={setSelectedPage}>
+				<References />
+			</UpdateScroll>
+		</div>
+		<LineGradient/>
+		<div className="w-5/6 mx-auto md:h-full">
+			<UpdateScroll page={"contact"} setSelectedPage={setSelectedPage}>
+				<Contact />
+			</UpdateScroll>
+			</div>
+		<Footer/>
+	</div>
   )
+}
+
+
+// wrap the conent of the pages in this to make the page-status update and with it the dot-scroll indicator (only shown in widescreen)
+function UpdateScroll({children, page, setSelectedPage}:any){
+  return <motion.div
+  margin="0 0 -200px 0"
+  amount="all"
+  onViewportEnter={() => setSelectedPage(page)}
+>{children}</motion.div>
 }
 
 export default App
