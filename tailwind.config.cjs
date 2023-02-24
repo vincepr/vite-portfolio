@@ -23,10 +23,11 @@ module.exports = {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
       },
+      /** for the content-images below, while using gh-pahes + vite it seems to be verry picky on where the files can be and how to adress them correctly */
       content: {
-        brush: 'url("./src/tailwindassets/brush.png")',
-        person1: 'url("src/tailwindassets/person-1.png")',
-        person2: 'url("/srctailwindassets/person-2.png")',
+        brush: 'url("/src/tailwindassets/brush.png")',
+        person1: 'url("/src/tailwindassets/person-1.png")',
+        person2: 'url("/src/srctailwindassets/person-2.png")',
         person3: 'url("/src/tailwindassets/person-3.png")',
       },
     },
