@@ -82,8 +82,6 @@ export default function App() {
 // wrap the conent of the pages in this to make the page-status update and with it the dot-scroll indicator (only shown in widescreen)
 function UpdateScroll({children, page, setSelectedPage}:any){
   return <motion.div
-  margin="0 0 -200px 0"
-  amount="all"
   onViewportEnter={() => setSelectedPage(page)}
 >{children}</motion.div>
 }

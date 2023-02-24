@@ -110,7 +110,6 @@ export default function ContactForm (){
                     <textarea
                         className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
                         placeholder="MESSAGE"
-                        name="message"
                         rows={4}
                         cols={50}
                         {...register("message",{
