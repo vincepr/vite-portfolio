@@ -24,10 +24,10 @@ module.exports = {
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
-        brush: 'url("./assets/brush.png")',
-        person1: 'url("public/assets/person-1.png")',
-        person2: 'url("./public/assets/person-2.png")',
-        person3: 'url("assets/person-3.png")',
+        brush: 'url("./src/tailwindassets/brush.png")',
+        person1: 'url("src/tailwindassets/person-1.png")',
+        person2: 'url("/srctailwindassets/person-2.png")',
+        person3: 'url("/src/tailwindassets/person-3.png")',
       },
     },
     /** with this we can target specific screen sizes with our tailwind inline
