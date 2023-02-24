@@ -2,6 +2,7 @@ import LineGradient from "../components/LineGradient"
 import useMediaQuery from "../hooks/useMediaQuery"
 import { motion } from "framer-motion"
 
+/** careful about how much text to fill in here, its currently not cutting off dynamically -> noticable in middle screen sizes cutting into next page*/
 export default function MySkills(){
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
 
@@ -22,7 +23,7 @@ export default function MySkills(){
                     </p>
                     <LineGradient width="w-1/3"/>
                     <p className="mt-10 mb-7">
-                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; 
+                        So absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. 
                     </p>
                 </motion.div>
                 <div className="mt-16 md:mt-0">
@@ -58,7 +59,7 @@ export default function MySkills(){
 
                     </div>
                     <p className="mt-5">
-                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
                     </p>
                 </motion.div>
 
@@ -81,7 +82,7 @@ export default function MySkills(){
 
                     </div>
                     <p className="mt-5">
-                    One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didnt listen.
+                    One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so...
                     </p>
                 </motion.div>
 
@@ -104,7 +105,7 @@ export default function MySkills(){
 
                     </div>
                     <p className="mt-5">
-                        he packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
+                        he packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove.
                     </p>
                 </motion.div>
 

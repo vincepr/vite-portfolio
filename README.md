@@ -10,7 +10,7 @@ npm install
 
 - add dependencies for animations and pagescrolling on menuclicking
 ```
-npm i framer-motion react-anchor-link-smooth-scroll
+npm i framer-motion react-anchor-link-smooth-scroll react-hook-form
 ```
 
 ## create useMediaQuery hook

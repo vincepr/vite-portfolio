@@ -4,7 +4,11 @@ import Landing from "./scenes/Landing"
 import Navbar from "./scenes/Navbar"
 import ScrollIndicator from "./scenes/ScrollIndicator"
 import LineGradient from "./components/LineGradient"
+import Projects from "./scenes/Projects"
+import Contact from "./scenes/Contact"
+import References from "./scenes/References"
 import MySkills from "./scenes/MySkills"
+import Footer from "./scenes/Footer"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home")
@@ -39,8 +43,21 @@ function App() {
        </div>
        <LineGradient />
        <div className="w-5/6 mx-auto md:h-full">
-        <MySkills/>
+          <MySkills/>
        </div>
+       <LineGradient/>
+       <div className="w-5/6 mx-auto">
+        <Projects />
+       </div>
+       <LineGradient/>
+       <div className="w-5/6 mx-auto md:h-full">
+        <References />
+       </div>
+       <LineGradient/>
+       <div className="w-5/6 mx-auto md:h-full">
+        <Contact />
+       </div>
+       <Footer/>
     </div>
   )
 }
