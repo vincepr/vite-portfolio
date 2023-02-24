@@ -11,7 +11,7 @@ import MySkills from "./scenes/MySkills"
 import Footer from "./scenes/Footer"
 import { motion } from "framer-motion"
 
-function App() {
+export default function App() {
   const [selectedPage, setSelectedPage] = useState("home")
   const [isTopOfPage, setisTopOfPage] = useState(true)
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
@@ -87,5 +87,3 @@ function UpdateScroll({children, page, setSelectedPage}:any){
   onViewportEnter={() => setSelectedPage(page)}
 >{children}</motion.div>
 }
-
-export default App
