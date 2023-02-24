@@ -7,10 +7,10 @@ type LinkIconData = {
 
 export default function SocialMediaIcons(){
     const data:LinkIconData = [
-        {name:"linkedin",href:"https://www.linkedin.com", imgSrc:"/src/assets/linkedin.png"},
-        {name:"facebook",href:"https://www.facebook.com", imgSrc:"/src/assets/facebook.png"},
-        {name:"twitter",href:"https://www.twitter.com", imgSrc:"/src/assets/twitter.png"},
-        {name:"instagram",href:"https://www.instagram.com", imgSrc:"/src/assets/instagram.png"},
+        {name:"linkedin",href:"https://www.linkedin.com", imgSrc:"assets/linkedin.png"},
+        {name:"facebook",href:"https://www.facebook.com", imgSrc:"assets/facebook.png"},
+        {name:"twitter",href:"https://www.twitter.com", imgSrc:"assets/twitter.png"},
+        {name:"instagram",href:"https://www.instagram.com", imgSrc:"assets/instagram.png"},
     ]
     const MediaIcons =(data:LinkIconData)=> data.map((oneLink,idx)=>
     <a className="hover:opacity-50 transition duration-500"

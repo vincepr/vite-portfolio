@@ -27,7 +27,7 @@ export default function Navbar({isTopOfPAge, selectedPage, setSelectedPage}:any)
                     className="rounded-full bg-red p-2"
                     onClick={()=>setIsMenuToggled(!isMenuToggled)}
                 >
-                    <img alt="menu-icon" src="../src/assets/menu-icon.svg" />
+                    <img alt="menu-icon" src="assets/menu-icon.svg" />
                 </button>)}
 
                 {/* Mobile Menu-POPUP */}
@@ -36,7 +36,7 @@ export default function Navbar({isTopOfPAge, selectedPage, setSelectedPage}:any)
                         {/* close ICON */}
                         <div className="flex justify-end p-12">
                             <button onClick={()=>setIsMenuToggled(!isMenuToggled)}>
-                                <img alt="menu-icon" src="../src/assets/close-icon.svg" />
+                                <img alt="menu-icon" src="assets/close-icon.svg" />
                             </button>
                         </div>
 

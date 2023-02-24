@@ -53,7 +53,7 @@ export default function ContactForm (){
                     visible: {opacity: 1, y: 0},
                 }}
             >
-                <img src="/src/assets/contact-image.jpeg" alt="contact"/>
+                <img src="assets/contact-image.jpeg" alt="contact"/>
             </motion.div>
             <motion.div
                 className="basis-1/2 mt-10 md:mt-0"
@@ -71,7 +71,7 @@ export default function ContactForm (){
                 <form
                     target="_blank"
                     onSubmit={onSubmit}
-                    action="https://formsubmit.co/vinceprinceking@googlemail.com"
+                    action="https://formsubmit.co/ecfea651b8a0fdaeea009d2df39191ae"
                     method="POST"
                 >
                     {/** NAME- input */}

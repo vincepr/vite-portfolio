@@ -1,4 +1,4 @@
-import { Children, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import useMediaQuery from "./hooks/useMediaQuery"
 import Landing from "./scenes/Landing"
 import Navbar from "./scenes/Navbar"

@@ -30,10 +30,10 @@ export default function MySkills(){
                     {isAboveMediumScreens ? (
                         <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
                             before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]">
-                            <img className="z-10" alt="skills" src="src/assets/skills-image.png"/>
+                            <img className="z-10" alt="skills" src="assets/skills-image.png"/>
                         </div>
                     ):(
-                        <img className="z-10" alt="skills" src="src/assets/skills-image.png"/>
+                        <img className="z-10" alt="skills" src="assets/skills-image.png"/>
                     )}
                 </div>
             </div>
